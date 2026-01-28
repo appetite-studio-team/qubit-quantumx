@@ -32,32 +32,32 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-8">
         {/* Search */}
-        <div className="mb-6 border-2 border-black">
+        <div className="mb-4 sm:mb-6 border-2 border-black">
           <SearchBar value={searchQuery} onChange={setSearchQuery} />
         </div>
 
         {/* Filters */}
-        <div className="mb-8">
+        <div className="mb-4 sm:mb-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
           <FilterTags activeFilter={activeFilter} onFilterChange={setActiveFilter} />
         </div>
 
         {/* Results count */}
-        <div className="mb-6 text-xs uppercase tracking-[0.2em] text-gray-500">
+        <div className="mb-4 sm:mb-6 text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-500">
           {filteredQubits.length} QUBIT TYPES FOUND
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredQubits.map((qubit, index) => (
             <QubitCard key={qubit.id} qubit={qubit} index={index} />
           ))}
         </div>
 
         {filteredQubits.length === 0 && (
-          <div className="text-center py-16 border-2 border-dashed border-gray-300">
-            <p className="text-gray-500 uppercase tracking-wider text-sm">
+          <div className="text-center py-12 sm:py-16 border-2 border-dashed border-gray-300">
+            <p className="text-gray-500 uppercase tracking-wider text-xs sm:text-sm px-4">
               No qubit types found matching your criteria
             </p>
           </div>
@@ -65,9 +65,9 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t-2 border-black mt-16 py-8">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+      <footer className="border-t-2 border-black mt-8 sm:mt-16 py-6 sm:py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-500">
             QUBIT EXPLORER — QUANTUM COMPUTING TECHNOLOGIES DATABASE
           </p>
         </div>

@@ -8,28 +8,28 @@ export function Header() {
   const prototypeCount = qubits.filter(q => q.category === "PROTOTYPE").length;
 
   return (
-    <header className="bg-[#1a1a1a] text-white py-6">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-center gap-16 text-center">
-          <div className="flex items-baseline gap-3">
-            <span className="text-4xl font-bold tracking-tight">{totalQubits}</span>
-            <span className="text-xs uppercase tracking-[0.2em] text-gray-400">
+    <header className="bg-[#1a1a1a] text-white py-4 sm:py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-16 text-center">
+          <div className="flex items-baseline gap-2 sm:gap-3">
+            <span className="text-2xl sm:text-4xl font-bold tracking-tight">{totalQubits}</span>
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-400">
               QUBIT TYPES
             </span>
           </div>
           
-          <div className="flex items-baseline gap-3">
-            <span className="text-4xl font-bold tracking-tight text-[#ff6b35]">
+          <div className="flex items-baseline gap-2 sm:gap-3">
+            <span className="text-2xl sm:text-4xl font-bold tracking-tight text-[#ff6b35]">
               {matureCount}+
             </span>
-            <span className="text-xs uppercase tracking-[0.2em] text-gray-400">
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-400">
               COMMERCIALLY READY
             </span>
           </div>
           
-          <div className="flex items-baseline gap-3">
-            <span className="text-4xl font-bold tracking-tight">{prototypeCount}</span>
-            <span className="text-xs uppercase tracking-[0.2em] text-gray-400">
+          <div className="flex items-baseline gap-2 sm:gap-3">
+            <span className="text-2xl sm:text-4xl font-bold tracking-tight">{prototypeCount}</span>
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-400">
               IN DEVELOPMENT
             </span>
           </div>
