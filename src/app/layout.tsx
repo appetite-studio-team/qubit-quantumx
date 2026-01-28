@@ -9,8 +9,43 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Qubit Explorer | Quantum Computing Technologies",
-  description: "Explore the various qubit technologies used in quantum computing",
+  title: "Qubit Database - Quantumx",
+  description: "Explore the various qubit technologies used in quantum computing. A comprehensive database of superconducting, trapped ion, photonic, topological, and other qubit technologies.",
+  keywords: ["quantum computing", "qubits", "superconducting qubits", "trapped ion", "photonic qubits", "quantum technology", "IBM Q", "Google Quantum", "IonQ"],
+  authors: [{ name: "Quantumx" }],
+  creator: "Quantumx",
+  publisher: "Quantumx",
+  icons: {
+    icon: "/App-Icon-Black.png",
+    shortcut: "/App-Icon-Black.png",
+    apple: "/App-Icon-Black.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://qubit-quantumx.vercel.app",
+    title: "Qubit Database - Quantumx",
+    description: "Explore the various qubit technologies used in quantum computing. A comprehensive database of superconducting, trapped ion, photonic, topological, and other qubit technologies.",
+    siteName: "Qubit Database - Quantumx",
+    images: [
+      {
+        url: "/App-Icon-Black.png",
+        width: 1024,
+        height: 1024,
+        alt: "Qubit Database - Quantumx",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Qubit Database - Quantumx",
+    description: "Explore the various qubit technologies used in quantum computing.",
+    images: ["/App-Icon-Black.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
