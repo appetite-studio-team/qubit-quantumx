@@ -47,7 +47,7 @@ export function QubitCard({ qubit, index }: QubitCardProps) {
           HOVER FOR DETAILS
         </div>
 
-        <div className="pt-4 border-t border-dashed border-gray-300 flex items-center gap-6">
+        <div className="pt-4 border-t border-dashed border-gray-300 grid grid-cols-3 gap-2">
           <BarIndicator label="READINESS" value={readinessScore} icon="◇" />
           <BarIndicator label="SCALE" value={scalabilityScore} icon="◈" />
           <BarIndicator label="COHERENCE" value={coherenceScore} icon="◎" />
