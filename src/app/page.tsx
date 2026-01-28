@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterTags } from "@/components/FilterTags";
@@ -66,10 +67,37 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t-2 border-black mt-8 sm:mt-16 py-6 sm:py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-500">
-            QUBIT EXPLORER — QUANTUM COMPUTING TECHNOLOGIES DATABASE
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center gap-4">
+          <a 
+            href="https://quantumx.foundation/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/App-Icon-Black.png"
+              alt="Quantumx Foundation"
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
+          </a>
+          <div className="text-center">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-500 mb-1">
+              QUBIT DATABASE — QUANTUM COMPUTING TECHNOLOGIES
+            </p>
+            <p className="text-[10px] sm:text-xs text-gray-400">
+              A project by{" "}
+              <a 
+                href="https://quantumx.foundation/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-black font-medium hover:text-[#ff6b35] transition-colors"
+              >
+                Quantumx Foundation
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
