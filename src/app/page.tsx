@@ -84,7 +84,7 @@ export default function Home() {
           </a>
           <div className="text-center">
             <p className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-500 mb-1">
-              QUBIT DATABASE — QUANTUM COMPUTING TECHNOLOGIES
+              QUBIT DATABASE
             </p>
             <p className="text-[10px] sm:text-xs text-gray-400">
               A project by{" "}

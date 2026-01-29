@@ -34,10 +34,10 @@ export function QubitDetailClient({ id }: QubitDetailClientProps) {
   const coherenceScore = getCoherenceScore(qubit);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 modal-backdrop z-40"
+        className="fixed inset-0 bg-black z-40"
         onClick={() => router.push("/")}
       />
 
