@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Qubit Database
 
-## Getting Started
+A project by [Quantumx Foundation](https://quantumx.technology/) — an open database of qubit types, commercial readiness, and the companies building them.
 
-First, run the development server:
+**Live site:** [https://qubit.quantumx.technology/](https://qubit.quantumx.technology/)
+
+## About
+
+This app lets you explore different qubit technologies (superconducting, trapped ion, photonic, topological, neutral atom, spin, quantum dot, NV center, NMR), their maturity levels, and which companies are working on each. Built with Next.js and TypeScript.
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 18+
+- npm (or yarn / pnpm / bun)
+
+### Install and run
 
 ```bash
+# Clone the repository
+git clone https://github.com/quantumx-foundation/qubit.quantumx.git
+cd qubit.quantumx
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command      | Description              |
+| ------------ | ------------------------ |
+| `npm run dev`   | Start dev server         |
+| `npm run build` | Build for production     |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Run ESLint               |
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for how to report bugs, suggest features, or submit pull requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For questions or support, contact **hi@quantumx.foundation**.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open source under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+A project by [Quantumx Foundation](https://quantumx.technology/).
