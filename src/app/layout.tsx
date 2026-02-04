@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qubit.quantumx.technology"),
   title: "Qubit Database - Quantumx",
   description: "Explore the various qubit technologies used in quantum computing. A comprehensive database of superconducting, trapped ion, photonic, topological, and other qubit technologies.",
   keywords: ["quantum computing", "qubits", "superconducting qubits", "trapped ion", "photonic qubits", "quantum technology", "IBM Q", "Google Quantum", "IonQ"],
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://qubit-quantumx.vercel.app",
+    url: "https://qubit.quantumx.technology",
     title: "Qubit Database - Quantumx",
     description: "Explore the various qubit technologies used in quantum computing. A comprehensive database of superconducting, trapped ion, photonic, topological, and other qubit technologies.",
     siteName: "Qubit Database - Quantumx",
@@ -59,19 +60,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrainsMono.variable} font-mono antialiased`}>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
         {children}
+        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
