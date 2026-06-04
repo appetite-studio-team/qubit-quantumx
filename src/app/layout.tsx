@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { JetBrains_Mono } from "next/font/google";
+import { SiteChrome } from "@/components/SiteChrome";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-BP6DEEHG6J";
@@ -60,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrainsMono.variable} font-mono antialiased`}>
-        {children}
+        <SiteChrome>{children}</SiteChrome>
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
