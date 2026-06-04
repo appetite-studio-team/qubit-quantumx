@@ -4,7 +4,6 @@ import { siteBrand } from "@/lib/site-brand";
 
 type SiteBrandMarkProps = {
   size?: "sm" | "md" | "lg";
-  showTagline?: boolean;
   linkHome?: boolean;
 };
 
@@ -12,7 +11,6 @@ const logoSizes = { sm: 32, md: 40, lg: 52 } as const;
 
 export function SiteBrandMark({
   size = "md",
-  showTagline = false,
   linkHome = true,
 }: SiteBrandMarkProps) {
   const dimension = logoSizes[size];
@@ -30,11 +28,6 @@ export function SiteBrandMark({
         <p className="truncate text-xs font-bold uppercase tracking-[0.12em] sm:text-sm sm:tracking-[0.15em]">
           {siteBrand.productName}
         </p>
-        {showTagline && (
-          <p className="mt-0.5 line-clamp-2 text-[10px] leading-snug text-gray-500 sm:text-xs">
-            {siteBrand.productTagline}
-          </p>
-        )}
       </div>
     </>
   );
