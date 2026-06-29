@@ -1,8 +1,8 @@
 // Edit these per deployment
 const BRAND_NAME = "QuantumX School";
 const ANNOUNCEMENT_MESSAGE =
-  "June cohort about to start, register today";
-const SHORT_MOBILE_MESSAGE = "June cohort — register today";
+  "July cohort about to start, register today";
+const SHORT_MOBILE_MESSAGE = "July cohort — register today";
 const CTA_LABEL = "Register";
 const CTA_URL = "https://quantumx.school/";
 
